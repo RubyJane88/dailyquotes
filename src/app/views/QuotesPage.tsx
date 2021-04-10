@@ -34,18 +34,21 @@ const QuotesPage = () => {
               <div>
                 <BoxMedia>
                   <div>
-                    <H1>{datum.quoteText} </H1>
+                    <H1 color={"white"}>{datum.quoteText} </H1>
                   </div>
                   <div>
                     <P> {datum.quoteAuthor} </P>
                   </div>
-                  <button style={{}}>
+                  <button onClick={() => alert("Facebook")}>
                     <Facebook color={"blue"} />
                   </button>
-                  <button style={{ margin: "5px" }}>
+                  <button
+                    style={{ margin: "5px" }}
+                    onClick={() => alert("Twitter")}
+                  >
                     <Twitter color={"cyan"} />
                   </button>
-                  <button>
+                  <button onClick={() => alert("Instagram")}>
                     <Instagram color={"violet"} />
                   </button>
                 </BoxMedia>
